@@ -78,3 +78,17 @@ this will be called after!
 
 ```
 
+## API
+
+The following methods will be publicly available on the host class:
+
+- `after(methodName, adviceFunction)`: Adds the adviceFunction to be called after the method.
+    - **methodName** {String}: The method name in the host class.
+    - **adviceFunction** {Function}: the function to be called. It receives the same parameters as the method.
+- `before(methodName, adviceFunction)`: Adds the adviceFunction to be called before the method.
+    - **methodName** {String}: The method name in the host class.
+    - **adviceFunction** {Function}: the function to be called. It receives the same parameters as the method.
+- `around(methodName, adviceFunction)`: Adds the adviceFunction to be called around the method.
+    - **methodName** {String}: The method name in the host class.
+    - **adviceFunction** {Function}: the function to be called. It receives the method as the first parameter and then same parameters.
+
