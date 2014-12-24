@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/CocktailJS/cocktail.png?branch=master)](https://travis-ci.org/CocktailJS/cocktail)
+[![NPM version](https://badge.fury.io/js/cocktail-trait-advisable.png)](http://badge.fury.io/js/cocktail-trait-advisable)
 
 # cocktail-trait-advisable
 
