@@ -10,6 +10,13 @@
     "name": "Maximiliano Fierro",
     "email": "elmasse@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CocktailJS/cocktail-trait-advisable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CocktailJS/cocktail-trait-advisable/issues"
+  },  
   "license": "MIT",
   "dependencies": {
     "cocktail": "0.6.0"
