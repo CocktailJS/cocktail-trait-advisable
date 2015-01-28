@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/CocktailJS/cocktail-trait-advisable.svg?branch=master)](https://travis-ci.org/CocktailJS/cocktail-trait-advisable)
-[![NPM version](https://badge.fury.io/js/cocktail-trait-advisable.png)](http://badge.fury.io/js/cocktail-trait-advisable)
+[![npm version](https://badge.fury.io/js/cocktail-trait-advisable.svg)](http://badge.fury.io/js/cocktail-trait-advisable)
 
 # cocktail-trait-advisable
 
@@ -83,13 +83,16 @@ this will be called after!
 
 The following methods will be publicly available on the host class:
 
-- `after(methodName, adviceFunction)`: Adds the adviceFunction to be called after the method.
+- `after( methodName, adviceFunction, [scope] )`: Adds the adviceFunction to be called after the method.
     - **methodName** {String}: The method name in the host class.
-    - **adviceFunction** {Function}: the function to be called. It receives the same parameters as the method.
-- `before(methodName, adviceFunction)`: Adds the adviceFunction to be called before the method.
+    - **adviceFunction** {String|Function}: the function or the name of the function to be called. It receives the same parameters as the method.
+    - **scope** {Object} the scope to execute the adviceFunction. Optional.
+- `before( methodName, adviceFunction, [scope] )`: Adds the adviceFunction to be called before the method.
     - **methodName** {String}: The method name in the host class.
-    - **adviceFunction** {Function}: the function to be called. It receives the same parameters as the method.
-- `around(methodName, adviceFunction)`: Adds the adviceFunction to be called around the method.
+    - **adviceFunction** {String|Function}: the function or the name of the function to be called. It receives the same parameters as the method.
+    - **scope** {Object} the scope to execute the adviceFunction. Optional.
+- `around( methodName, adviceFunction, [scope] )`: Adds the adviceFunction to be called around the method.
     - **methodName** {String}: The method name in the host class.
-    - **adviceFunction** {Function}: the function to be called. It receives the method as the first parameter and then same parameters.
-
+    - **adviceFunction** {String|Function}: the function or the name of the function to be called. It receives the method as the first parameter and then same parameters.
+    - **scope** {Object} the scope to execute the adviceFunction. Optional.
+    
